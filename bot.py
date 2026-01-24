@@ -1,4 +1,3 @@
-Bankir, [2026-01-24 19:05]
 import os
 import re
 import sqlite3
@@ -139,7 +138,6 @@ def parse_amount_note(text: str):
         return amount, note
     except ValueError:
 
-Bankir, [2026-01-24 19:05]
 return None, note
 
 def add_tx(wallet_id: int, wallet_type: str, user_id: int, user_name: str,
@@ -258,7 +256,6 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def wake_greet(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.
 
-Bankir, [2026-01-24 19:05]
 reply_text("👋 Я на звʼязку 🙂", reply_markup=MAIN_KB)
     return CHOOSING
 
@@ -374,7 +371,6 @@ async def choosing(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "➖ *Витрата*\nОбери категорію 👇",
             parse_mode=ParseMode.MARKDOWN,
 
-Bankir, [2026-01-24 19:05]
 reply_markup=expense_cats_kb()
         )
         return EXPENSE_CATEGORY
@@ -482,7 +478,6 @@ async def expense_amount(update: Update, context: ContextTypes.DEFAULT_TYPE):
     add_tx(wallet_id, wtype, user.id, user_display(update), "expense", amount, cat, note or None)
     context.
 
-Bankir, [2026-01-24 19:05]
 user_data.pop("expense_cat", None)
 
     await update.message.reply_text(
@@ -536,3 +531,4 @@ def main():
 
 if name == "__main__":
     main()
+
