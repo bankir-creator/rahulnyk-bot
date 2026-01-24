@@ -212,6 +212,13 @@ async def ask_note(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return ConversationHandler.END
 
 # ================= MAIN =================
+async def greet(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "👋 Привіт! Я *Рахульник*.\n"
+        "Натисни кнопку нижче або напиши /start 🙂",
+        reply_markup=MAIN_KB,
+        parse_mode="Markdown",
+    )
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
 
@@ -232,3 +239,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
