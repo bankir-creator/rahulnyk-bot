@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Скелет сайту — Назва бренду</title>
+    <meta
+      name="description"
+      content="Універсальний скелет сайту. Замініть тексти, зображення та стилі під свій проєкт."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="logo" href="#">
+          <span class="logo__mark">◼</span>
+          <span class="logo__text">Назва бренду</span>
+        </a>
+        <nav class="nav" data-nav>
+          <a href="#features">Переваги</a>
+          <a href="#about">Про нас</a>
+          <a href="#services">Послуги</a>
+          <a href="#contact">Контакти</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Слоган або короткий опис</p>
+            <h1>Заголовок, який пояснює основну цінність</h1>
+            <p>
+              Опишіть, що ви пропонуєте клієнту. Цей текст можна легко замінити
+              під ваші задачі.
+            </p>
+            <div class="hero__actions">
+              <a class="button primary" href="#contact">Основна дія</a>
+              <a class="button secondary" href="#features">Дізнатися більше</a>
+            </div>
+          </div>
+          <div class="hero__card" aria-hidden="true">
+            <div class="hero__card-content">
+              <p class="card__title">Візуальний блок</p>
+              <p>Замініть на зображення, відео чи інфографіку.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2>Ключові переваги</h2>
+            <p>Сформулюйте 3-4 головні причини, чому обирають саме вас.</p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h3>Перевага №1</h3>
+              <p>Короткий опис вигоди або результату.</p>
+            </article>
+            <article class="card">
+              <h3>Перевага №2</h3>
+              <p>Ще один аргумент або цифра, що підсилює довіру.</p>
+            </article>
+            <article class="card">
+              <h3>Перевага №3</h3>
+              <p>Що саме робить ваш продукт або послугу унікальними.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt">
+        <div class="container about">
+          <div>
+            <h2>Про компанію</h2>
+            <p>
+              Розкажіть історію бренду, місію та цінності. Це місце для більш
+              розгорнутого тексту про ваш досвід.
+            </p>
+            <ul class="list">
+              <li>Цінність №1 або принцип роботи.</li>
+              <li>Цінність №2 або ключовий підхід.</li>
+              <li>Цінність №3 або спеціалізація.</li>
+            </ul>
+          </div>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__value">10+</span>
+              <span class="stat__label">років досвіду</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">250+</span>
+              <span class="stat__label">проєктів</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">98%</span>
+              <span class="stat__label">задоволених клієнтів</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2>Послуги або напрямки</h2>
+            <p>Опишіть основні блоки, які ви пропонуєте замовнику.</p>
+          </div>
+          <div class="grid grid--wide">
+            <article class="card card--highlight">
+              <h3>Послуга А</h3>
+              <p>Кому підходить, що входить та який результат.</p>
+              <a class="link" href="#contact">Обговорити</a>
+            </article>
+            <article class="card">
+              <h3>Послуга B</h3>
+              <p>Окресліть ключові етапи або інструменти.</p>
+              <a class="link" href="#contact">Обговорити</a>
+            </article>
+            <article class="card">
+              <h3>Послуга C</h3>
+              <p>Підкресліть унікальність і відмінність від інших.</p>
+              <a class="link" href="#contact">Обговорити</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="container cta">
+          <div>
+            <h2>Готові розпочати?</h2>
+            <p>Додайте переконливий заклик до дії та коротке пояснення.</p>
+          </div>
+          <a class="button primary" href="#contact">Залишити заявку</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div>
+            <h2>Контакти</h2>
+            <p>Заповніть форму або додайте ваші канали зв'язку.</p>
+            <div class="contact__info">
+              <p><strong>Email:</strong> hello@example.com</p>
+              <p><strong>Телефон:</strong> +38 (000) 000-00-00</p>
+              <p><strong>Місто:</strong> Київ, Україна</p>
+            </div>
+          </div>
+          <form class="form">
+            <label>
+              Ім'я
+              <input type="text" name="name" placeholder="Ваше ім'я" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@email.com" required />
+            </label>
+            <label>
+              Повідомлення
+              <textarea name="message" rows="4" placeholder="Опишіть запит"></textarea>
+            </label>
+            <button class="button primary" type="submit">Надіслати</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© 2025 Назва бренду. Усі права захищені.</p>
+        <div class="footer__links">
+          <a href="#">Політика приватності</a>
+          <a href="#">Умови використання</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
